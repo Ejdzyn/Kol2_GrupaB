@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AWDataService} from "../../service/aw-data.service";
 
 @Component({
   selector: 'aw-forum-details',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AWForumDetailsComponent implements OnInit {
 
-  constructor() { }
+  public item:any
+
+  constructor(private service: AWDataService) { }
 
   ngOnInit(): void {
+  }
+
+  getItem(){
+    this.service.getOrder("2").subscribe(response=>{
+      this.item = response;
+    })
   }
 
 }
