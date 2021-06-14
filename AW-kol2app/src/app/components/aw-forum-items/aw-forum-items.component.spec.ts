@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OrdersAWComponent } from './orders-aw.component';
+import { AWForumItemsComponent } from './aw-forum-items.component';
 
-describe('OrdersAWComponent', () => {
-  let component: OrdersAWComponent;
-  let fixture: ComponentFixture<OrdersAWComponent>;
+describe('AWForumItemsComponent', () => {
+  let component: AWForumItemsComponent;
+  let fixture: ComponentFixture<AWForumItemsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OrdersAWComponent ]
+      declarations: [ AWForumItemsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OrdersAWComponent);
+    fixture = TestBed.createComponent(AWForumItemsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
