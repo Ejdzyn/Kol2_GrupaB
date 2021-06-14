@@ -16,7 +16,7 @@ export class AWDataService {
     return this.http.get(this.url +"api/order/items");
   }
 
-  getPost(id: String | null){
+  getOrder(id: String | null){
     return this.http.get(this.url +"api/order/items/"+id);
   }
 
